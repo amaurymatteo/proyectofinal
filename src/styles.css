@@ -1,0 +1,325 @@
+:root {
+    --bs-light-primary: #F1FAFF;
+    --bs-active-primary: #0095E8;
+    --bs-light-success: #E8FFF3;
+    --bs-active-success: #47BE7D;
+    --bs-light-info: #F8F5FF;
+    --bs-active-info: #5014D0;
+    --bs-light-warning: #FFF8DD;
+    --bs-active-warning: #F1BC00;
+    --bs-light-danger: #FFF5F8;
+    --bs-active-danger: #D9214E;
+    --bs-light-dark: #EFF2F5;
+    --bs-active-dark: #131628;
+    --bs-gray-100: #F5F8FA;
+    --bs-gray-200: #EFF2F5;
+    --bs-gray-300: #E4E6EF;
+    --bs-gray-400: #B5B5C3;
+    --bs-gray-500: #A1A5B7;
+    --bs-gray-600: #7E8299;
+    --bs-gray-700: #5E6278;
+    --bs-gray-800: #3F4254;
+    --bs-gray-900: #181C32;
+    --bs-xs: 0;
+    --bs-sm: 576px;
+    --bs-md: 768px;
+    --bs-lg: 992px;
+    --bs-xl: 1200px;
+    --bs-xxl: 1400px;
+    --bs-border-color: #EFF2F5;
+    --bs-border-dashed-color: #E4E6EF;
+}
+
+body {
+    background-color: #404040;
+}
+
+.text-gray-800 {
+    color: #3f4254!important;
+}
+
+
+.text-muted {
+    color: #a1a5b7!important;
+}
+.fw-bold {
+    font-weight: 400!important;
+}
+
+
+.svg-icon.svg-icon-warning svg [fill]:not(.permanent):not(g) {
+    transition: fill .3s ease;
+    fill: #ffc700;
+}
+.svg-icon.svg-icon-success svg [fill]:not(.permanent):not(g) {
+    transition: fill .3s ease;
+    fill: #50cd89;
+}
+.svg-icon.svg-icon-danger svg [fill]:not(.permanent):not(g) {
+    transition: fill .3s ease;
+    fill: #f1416c;
+}
+.svg-icon.svg-icon-info svg [fill]:not(.permanent):not(g) {
+    transition: fill .3s ease;
+    fill: #7239ea;
+}
+
+
+.me-2 {
+    margin-right: 0.5rem!important;
+}
+
+
+.card .card-header .card-title, .card .card-header .card-title .card-label {
+    font-weight: 500;
+    font-size: 1.275rem;
+    color: #181c32;
+}
+.card .card-header .card-title {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    margin-left: 0;
+}
+.text-dark {
+    color: #181c32!important;
+}
+
+
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #eff2f5;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 20px 0 rgb(76 87 125 / 2%);
+}
+
+.card {
+    border: 0;
+    box-shadow: 0 0 20px 0 rgb(76 87 125 / 2%);
+}
+
+.card .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    min-height: 70px;
+    padding: 0 2.25rem;
+    background-color: transparent;
+    border-bottom: 1px solid #eff2f5;
+}
+
+.bg-light-warning {
+    background-color: #fff8dd!important;
+}
+
+.bg-light-success {
+    background-color: #e8fff3!important;
+}
+
+.bg-light-danger {
+    background-color: #fff5f8!important;
+}
+
+.bg-light-info {
+    background-color: #f8f5ff!important;
+}
+
+.p-5 {
+    padding: 1.25rem!important;
+}
+
+.mb-7 {
+    margin-bottom: 1.75rem!important;
+}
+.align-items-center {
+    align-items: center!important;
+}
+
+.g-xl-8, .gy-xl-8 {
+    --bs-gutter-y: 2rem;
+}
+
+.rounded {
+    border-radius: 0.475rem!important;
+}
+
+.card .card-body {
+    padding: 2rem 2.25rem;
+}
+.pt-0 {
+    padding-top: 0!important;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+
+
+
+/* .content-btn {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    text-align: center;
+  }
+  @media (min-width: 600px) {
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.btn {
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 0 2em;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  @media (min-width: 600px) {
+    .btn {
+      margin: 0 1em 2em;
+    }
+  }
+  .btn:hover {
+    text-decoration: none;
+  }
+
+
+  .btn-1 {
+    background: #e02c26;
+    font-weight: 100;
+  }
+  .btn-1 svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .btn-1 rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+  }
+  
+  .btn-1:hover {
+    background: rgba(225, 51, 45, 0);
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+  .btn-1:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  } */
+
+
+  #container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  
+  /* Button Styles */
+  
+  .button {
+    display: inline-flex;
+    height: 40px;
+    width: 150px;
+    border: 2px solid #BFC0C0;
+    margin: 20px 20px 20px 20px;
+    color: #dfe0e0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 0.5rem;
+  }
+  
+  a {
+    color: #e6e7e7;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+
+  #button-6 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #button-6 a {
+    position: relative;
+    transition: all .45s ease-Out;
+  }
+  
+  #spin {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    left: 70px;
+    top: 20px;
+    transform: rotate(0deg);
+    background: none;
+    position: absolute;
+    transition: all .5s ease-Out;
+  }
+  
+  #button-6:hover #spin {
+    width: 200%;
+    height: 500%;
+    opacity: 1;
+    left: -70px;
+    top: -70px;
+    background: #BFC0C0;
+    transform: rotate(80deg);
+  }
+  
+  #button-6:hover a {
+    color: #2D3142;
+  }
+
+  .separator.separator-solid {
+    border-bottom: 1px solid #EBEDF3;
+}
+
+.separator {
+    height: 0;
+}

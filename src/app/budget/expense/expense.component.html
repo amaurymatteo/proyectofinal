@@ -1,0 +1,40 @@
+<div class="row  justify-content-md-center">
+    <div class="col-6">
+        <div class="card card-xl-stretch mb-xl-8">
+            <div class="card-header border-0">
+                <h3 class="card-title fw-bolder text-dark">Gastos</h3>
+            </div>
+            <div class="card-body pt-0">
+                <form [formGroup]="this.budgetService.form">
+                    <div class="form-group">
+                        <label for="amount">Cuenta</label>
+                        <select formControlName="type" class="form-select">
+                            <option *ngFor="let type of types" [value]="type">{{type.name}}</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="amount">Monto</label>
+                        <input formControlName="amount" id="amount" type="number" class="form-control"
+                                required
+                                [ngClass]="this.budgetService.amount?.touched && this.budgetService.amount?.errors ? 'is-invalid' : ''">
+                        
+                            <div *ngIf="this.budgetService.amount?.touched && this.budgetService['amount']errors['required']" class="invalid-feedback">Este campo es obligatorio</div>
+                            <div *ngIf="this.budgetService.amount?.touched && this.budgetService['amount']errors['min']" class="invalid-feedback">Este campo no pude ser menor de 10</div>
+                        
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Fecha</label>
+                        <input formControlName="date" id="date" type="date" class="form-control">
+                        
+                    </div>
+
+                    <div class="d-grid gap-2 col-6 mx-auto mt-4">
+                        <button (click)="save()" class="btn btn-primary">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
